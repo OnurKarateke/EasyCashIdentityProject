@@ -14,7 +14,8 @@ namespace EasyCashIdentityProject.EntityLayer.Concrete
         public string Disctrict { get; set; }
         public string City { get; set; }
         public string ImageUrl { get; set; }
-        public List<CustomerAccount> CustomerAccounts { get; set; }
+		public int ConfirmCode { get; set; }
+		public List<CustomerAccount> CustomerAccounts { get; set; }
 
     }
 }
