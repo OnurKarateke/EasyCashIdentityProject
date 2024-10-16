@@ -102,7 +102,7 @@ input[type="text"], input[type="password"], input[type="email"]{
 	color: #fff;
 	font-family: 'Quicksand', sans-serif;
 }
-input[type="text"] {
+input[type="text"]{
 	background: url("../images/user.png") no-repeat 382px 11px;
 	background-size: 25px;
 }
@@ -112,7 +112,7 @@ input[type="email"] {
 }
 
 input[type="password"] {
-	background: url("register/images/password.png") no-repeat 382px 11px;
+	background: url("../images/password.png") no-repeat 382px 11px;
 	background-size: 25px;
 }
 

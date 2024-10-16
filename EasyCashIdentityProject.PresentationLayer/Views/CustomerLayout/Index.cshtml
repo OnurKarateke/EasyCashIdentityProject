@@ -1,15 +1,39 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
-
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
+@await Component.InvokeAsync("_CustomerLayoutHeaderPartial")
+
+<body class="nav-md footer_fixed">
+    <div class="container body">
+        <div class="main_container">
+
+            <!-- side navigation -->
+            @await Component.InvokeAsync("_CustomerLayoutSidebarPartial")
+            <!-- side navigation -->
+            <!-- top navigation -->
+            @await Component.InvokeAsync("_CustomerLayoutNavbarPartial")
+            <!-- /top navigation -->
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="">
+                    <div class="page-title">
+                        <div class="title_left">
+                            @RenderBody()
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /page content -->
+            <!-- footer content -->
+            @await Component.InvokeAsync("_CustomerLayoutFooterPartial")
+            <!-- /footer content -->
+        </div>
+    </div>
+
+    @await Component.InvokeAsync("_CustomerLayoutScriptPartial")
+
 </body>
 </html>
