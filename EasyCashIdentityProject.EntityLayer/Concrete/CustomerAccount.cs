@@ -11,10 +11,14 @@ namespace EasyCashIdentityProject.EntityLayer.Concrete
         public int CustomerAccountID { get; set; }
         public string CustomerAccountNumber { get; set; }
         public string Currency { get; set; }
+        public string CustomerAccountCurrency { get; set; }
         public decimal CustomerAccountBalance { get; set; }
         public string BankBranch{ get; set; }
         public int AppUserID { get; set; }
         public AppUser appuser { get; set; }
+
+        public List<CustomerAccountProcess> CustomerSender { get; set; }
+        public List<CustomerAccountProcess> CustomerReceiver { get; set; }
 
     }
 }
